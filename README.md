@@ -1,4 +1,4 @@
-# dicionario-comandos-atalhos
+# Dicionario / Comandos / Atalhos / Dicas / Links
 Comandos e atalhos diversos uteis
 
 
