@@ -3,3 +3,5 @@ theme: jekyll-theme-cayman
 # Ajustes da Pagina
 title: Referencias e Documentações
 description: Links, tutoriais, comandos, etc.
+
+show_downloads: false
