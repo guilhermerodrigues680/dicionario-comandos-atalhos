@@ -427,8 +427,13 @@
         <main id="content" class="main-content" role="main">
             {{ content }}
         </main>
-
-        <p>{{ page.url }}</p>
     </div>
+
+    <script>
+      function getURL() {
+        alert("The URL of this page is: " + window.location.href);
+      }
+      getURL();
+    </script>
 </body>
 </html>
