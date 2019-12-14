@@ -7,3 +7,8 @@ lang: pt-br
 show_downloads: false
 
 theme: jekyll-theme-cayman
+
+paginate: 5
+
+plugins:
+  - jekyll-paginate
