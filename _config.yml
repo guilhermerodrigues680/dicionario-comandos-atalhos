@@ -1,4 +1,9 @@
-title: Referencias e Comandos
-description: Site com links, tutoriais sobre diversos assuntos.
+# Site Settings
+title: "Referencias e Comandos"
+description: "Site com links, tutoriais sobre diversos assuntos."
+lang: "pt-br"
+
+# Adicionais
 show_downloads: false
+
 theme: jekyll-theme-cayman
