@@ -1,3 +1,6 @@
+### Página disponível em:
+[guilhermerodrigues680.github.io/dicionario-comandos-atalhos/](https://guilhermerodrigues680.github.io/dicionario-comandos-atalhos/ "Referências e Documentações")
+
 # Dicionario / Comandos / Atalhos / Dicas / Links
 Comandos e atalhos diversos uteis
 
