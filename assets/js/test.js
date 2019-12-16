@@ -15,7 +15,7 @@ function loadPages() {
 
             res.forEach(element => {
                 console.log(element.name);
-                div.innerHTML = div.innerHTML + '<p><a href=\"/dicionario-comandos-atalhos/pages/' + element.name + '\">' + element.name + '</a></p>';
+                div.innerHTML = div.innerHTML + '<p><a href=\"/dicionario-comandos-atalhos/pages/' + element.name.split(".")[0] + '.html\">' + element.name + '</a></p>';
             });
         }
     };
