@@ -13,6 +13,10 @@
   <!-- Styles CSS -->
   <!-- <link rel="stylesheet" href="../assets/css/test2.css"> -->
   <link rel="stylesheet" href="{{ '/assets/css/test2.css' | relative_url }}">
+
+  <!-- Cayman theme css -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
 </head>
 <body>
 
@@ -49,9 +53,21 @@
   </nav>
 
   <!-- Conteudo Markdown -->
-  <div>
+  <header class="page-header" role="banner">
+    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+  </header>
+
+  <main id="content" class="main-content" role="main">
     {{ content }}
-  </div>
+
+    <footer class="site-footer">
+      {% if site.github.is_project_page %}
+        <span class="site-footer-owner">O repositório <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> é mantido por <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+      {% endif %}
+      <span class="site-footer-credits">Esta pagina foi gerada pelo <a href="https://pages.github.com">GitHub Pages</a>.</span>
+    </footer>
+  </main>
 
   <!-- Scripts Bootstrap 4-->
   <!-- <script src="../assets/bootstrap4/jquery-3.4.1.slim.min.js"></script> -->
