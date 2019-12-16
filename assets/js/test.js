@@ -12,15 +12,15 @@ function loadPages() {
 
             // console.log(res);
 
-            div.innerHTML = "<h2>Pages:</h2>";
+            // div.innerHTML = "<h2>Pages:</h2>";
 
             res.forEach(element => {
                 // console.log(element.name);
-                div.innerHTML = div.innerHTML + '<p><a href=\"/dicionario-comandos-atalhos/pages/' + element.name.split(".")[0] + '.html\">' + element.name + '</a></p>';
+                // div.innerHTML = div.innerHTML + '<p><a href=\"/dicionario-comandos-atalhos/pages/' + element.name.split(".")[0] + '.html\">' + element.name + '</a></p>';
                 
                 let a = document.createElement("a");
                 a.href = '/dicionario-comandos-atalhos/pages/' + element.name.split(".")[0] + '.html';
-                a.appendChild(document.createTextNode("Hello World"));
+                a.appendChild(document.createTextNode(element.name));
                 
                 dropdownButton.appendChild(a);
             });
