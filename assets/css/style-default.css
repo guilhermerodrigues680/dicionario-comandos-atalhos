@@ -6,3 +6,7 @@
     height: 40px;
     filter: invert(100%);
 }
+
+.page-header-custom {
+    margin-top: 66px;
+}
