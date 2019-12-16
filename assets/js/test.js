@@ -8,7 +8,7 @@ function loadPages() {
         if (this.readyState == 4 && this.status == 200) {
             var res = JSON.parse(this.responseText);
             const div = document.querySelector("#main-div");
-            const dropdownButton = document.querySelector("dropdown-button");
+            const dropdownButton = document.querySelector("#dropdown-button");
 
             // console.log(res);
 
