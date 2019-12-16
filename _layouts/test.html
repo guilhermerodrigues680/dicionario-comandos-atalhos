@@ -10,6 +10,11 @@
 </head>
 <body>
 
+  <div  style="margin-top:150px;margin-bottom:30px;text-align:center;">
+    <img src="https://4.bp.blogspot.com/-7OHSFmygfYQ/VtLSb1xe8kI/AAAAAAAABjI/FxaRp5xW2JQ/s320/logo.png" style="width: 100px;margin-bottom:15px">
+    <h1>Guilherme Rodrigues</h1>
+  </div>
+
   <!-- NavBar -->
   <div class="navbar">
       <a href="{{ site.github.url }}">Home</a>
@@ -26,6 +31,12 @@
     </div>
 
   <div id="main-div"></div>
+
+  <!-- Conteudo Markdown -->
+  <div>
+    {{ content }}
+  </div>
+
 <!--   <div>
     <p> {{ site.url }} </p>
     <p> {{ page.url }} </p>
@@ -37,6 +48,8 @@
     <p> {{ page }} </p>
     <p> {{ site.github }} </p>
   </div> -->
+
+  <p> {{ site.github }} </p>
 
   <!-- Scripts -->
   <script src="{{ '/assets/js/test.js' | relative_url}}"></script>
