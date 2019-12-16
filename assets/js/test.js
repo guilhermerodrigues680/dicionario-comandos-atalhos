@@ -15,7 +15,7 @@ function loadPages() {
 
             res.forEach(element => {
                 console.log(element.name);
-                div.innerHTML = div.innerHTML + "<p>" + element.name + "</p>";
+                div.innerHTML = div.innerHTML + '<p><a href=\"' + '{{ site.github.url }}/pages/' + element.name + '\">' + element.name + '</a></p>';
             });
         }
     };
