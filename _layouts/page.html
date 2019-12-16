@@ -1,29 +1,85 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "pt-BR" }}">
-  <head>
-    <meta charset="UTF-8">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ page.title | default: site.title | default: site.github.repository_name }}</title>
+  
+  <!-- Bootstrap 4 CSS -->
+  <!-- <link rel="stylesheet" href="../assets/bootstrap4/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="{{ '/assets/bootstrap4/bootstrap.min.css' | relative_url }}">
+  
+  <!-- Styles CSS -->
+  <!-- <link rel="stylesheet" href="../assets/css/style-page.css"> -->
+  <link rel="stylesheet" href="{{ '/assets/css/style-page.css' | relative_url }}">
 
-    {% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
+  <!-- Cayman theme css -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+</head>
+<body>
+
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary navbar-custom">
+    <a class="navbar-brand" href="{{ site.github.owner_url }}">
+      <img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="navbar-custom-img">
+      guilhermerodrigues680
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-stretch" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.github.url }}">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Páginas
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="div-dropdown-pages">
+            <!-- <a class="dropdown-item" href="#">Action</a> -->
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/sobre.html' | relative_url }}">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/pages/dev.html' | relative_url }}">Dev</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteudo Markdown -->
+  <header class="page-header-custom" role="banner">
     <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
     <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+  </header>
 
-    <main id="content" class="main-content" role="main">
-      {{ content }}
+  <main id="content" class="main-content" role="main">
+    {{ content }}
 
-      <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner">O repositório <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> é mantido por <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits">Esta pagina foi gerada pelo <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
-    </main>
+    <footer class="site-footer">
+      {% if site.github.is_project_page %}
+        <span class="site-footer-owner">O repositório <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> é mantido por <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+      {% endif %}
+      <span class="site-footer-credits">Esta pagina foi gerada pelo <a href="https://pages.github.com">GitHub Pages</a>.</span>
+    </footer>
+  </main>
 
-    <p class="guilherme">Guilherme</p>
-  </body>
+  <!-- Scripts Bootstrap 4-->
+  <!-- <script src="../assets/bootstrap4/jquery-3.4.1.slim.min.js"></script> -->
+  <script src="{{ '/assets/bootstrap4/jquery-3.4.1.slim.min.js' | relative_url }}"></script>
+  <!-- <script src="../assets/bootstrap4/popper.min.js"></script> -->
+  <script src="{{ '/assets/bootstrap4/popper.min.js' | relative_url }}"></script>
+  <!-- <script src="../assets/bootstrap4/bootstrap.min.js"></script> -->
+  <script src="{{ '/assets/bootstrap4/bootstrap.min.js' | relative_url }}"></script>
+
+  <!-- Scripts -->
+  <!-- <script src="../assets/js/script-page.js"></script> -->
+  <script src="{{ '/assets/js/script-page.js' | relative_url }}"></script>
+    
+</body>
 </html>

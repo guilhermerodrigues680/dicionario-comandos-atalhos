@@ -1,5 +1,5 @@
 ---
-layout: test2
+layout: page
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
